@@ -8,7 +8,7 @@ dotenv.config()
 
 const app = express()
 
-
+app.use(express.json())
 const PORT = process.env.PORT || 5000
 
 app.listen(PORT, ()=>{
@@ -26,6 +26,6 @@ app.get("/", handleGetRequest)
 
 app.get("/user", handleUserRequest)
 
-app.post("/add-student", handlePostRequest)
+app.post("/add-product", handlePostRequest)
 
-app.put("/edit-user", handleEditUserReq)
+app.put("/edit-item", handleEditUserReq)
