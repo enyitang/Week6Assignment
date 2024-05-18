@@ -2,6 +2,7 @@
 //CRUD- Create,Update and Delete from the Database
 const express = require("express")
 const mongoose = require("mongoose")
+const {handleGetRequest, handleUserRequest, handlePostRequest, handleEditUserReq} = require("./inventory")
 const dotenv = require("dotenv")
 dotenv.config()
 
